@@ -1,11 +1,5 @@
-require "simplecov"
-require 'coveralls'
+require "covered/rspec"
 require 'fakefs/spec_helpers'
-
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
-SimpleCov.start do
-  add_filter "/spec/"
-end
 
 require "invoker"
 require "invoker/power/power"
